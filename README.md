@@ -1,13 +1,13 @@
 
-# REST-API
+# REST-API  
 
-## Introduction
-Here you can find the API for android project (MDS School)
+## Introduction  
+Here you can find the API for android project (MDS School)  
 
-## Prerequisites
+## Prerequisites  
 
 install `nodejs` & `npm`
-
+  
 ## How to use it
 Clone this repository to your local storage:
 `git clone https://github.com/eamarelo/rest-api.git`
@@ -44,25 +44,25 @@ Run the project to http://localhost:1337/ :
 #### Register an user
 
 URI : http://localhost:1337/api/auth/register
-method: POST
+method: POST  
 Data to send :
 `{ 
 	"name": "name",
 	"email": "email@hotmail.fr",
 	"password": "password"
 }`
-
+  
 response: 
 `{
     "auth": true,
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYmNmODJjNzRkM2NkMTZkODRiMzYyMiIsImlhdCI6MTUyMjMzMzc0MCwiZXhwIjoxNTIyNDIwMTQwfQ.ZhW2VDbOWk0m9iMMP5KifHdlwe5CFn9FjO7izBtcz6o"
 }`
-
+  
 #### Get list all users
-
-URI : http://localhost:1337/users/
+  
+URI : http://localhost:1337/users/  
 method: GET
-
+  
 response: 
 `[
     {
@@ -155,7 +155,7 @@ method : DELETE
 resonse: User was deleted.
 
 #### Get user by token
-URI : http://5.51.221.85:1337/api/auth/me
+URI : http://localhost:1337/api/auth/me
 
 Headers:`{
 	"x-access-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVhYmNjN2I1Mzc1ZTBkMTlmMGVjMjA2NSIsImlhdCI6MTUyMjMyMTMzMywiZXhwIjoxNTIyNDA3NzMzfQ.BHdZhxboUpGcTZVVv6ERAx3ttruGbUvf_Sw6mQPNPOA"
