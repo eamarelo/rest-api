@@ -11,6 +11,7 @@ var Track = require('./Track');
 router.post('/', function (req, res) {
 	Track.create({
 		identification : req.body.identification,
+		time:req.body.time,
 		longitude : req.body.longitude,
 		latitude : req.body.latitude
 	}, 
